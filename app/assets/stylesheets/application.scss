@@ -21,14 +21,28 @@
 @import "font-awesome";
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 50px;
+
+}
+
+
+
 /****** LOGIN MODAL ******/
 .loginmodal-container {
   padding: 30px;
   max-width: 350px;
   width: 100% !important;
-  background-color: #F7F7F7;
+  background-color: #E4D2AD;
   margin: 0 auto;
-  border-radius: 2px;
+  border-radius: 20px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   font-family: roboto;
@@ -629,14 +643,25 @@
 .product {
       border: 10px solid transparent;
       margin-bottom: 25px;
-      width: 80%;
-      height: 80%;
-      opacity: 0.7;
+      width: 300px;
+      height: 300px;
   }
 
 .product:hover {
       border-color: #f1f1f1;
   }
+
+  .hjc-img-wrap {
+
+     img {
+       width: auto;
+       height: auto;
+     }
+     &:hover {
+       transform: scale(1.2);
+       transition: all .8s;
+     }
+   }
 
 //--------Footer-------
 .footer {

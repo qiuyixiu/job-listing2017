@@ -3,6 +3,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
 
+
 <!--
        If you want to change #bootstrap-touch-slider id then you have to change Carousel-indicators and Carousel-Control  #bootstrap-touch-slider slide as well
        Slide effect: slide, fade
@@ -141,7 +142,7 @@
     <div class="col-sm-4">
       <p class="text-center"><strong>高帮鞋</strong></p><br>
       <a href="#demo" data-toggle="collapse">
-        <img src="http://oon3erbcp.bkt.clouddn.com/tu-5.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="http://oon3erbcp.bkt.clouddn.com/tu-5.jpg" class="img-circle product" alt="Random Name" width="255" height="255">
       </a>
       <div id="demo" class="collapse">
         <p>量脚定做</p>
@@ -152,7 +153,7 @@
     <div class="col-sm-4">
       <p class="text-center"><strong>花朵</strong></p><br>
       <a href="#demo2" data-toggle="collapse">
-        <img src="http://oon3erbcp.bkt.clouddn.com/tu-4.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="http://oon3erbcp.bkt.clouddn.com/tu-4.jpg" class="img-circle product" alt="Random Name" width="255" height="255">
       </a>
       <div id="demo2" class="collapse">
         <p>以皮为材</p>
@@ -163,7 +164,7 @@
     <div class="col-sm-4 item fl">
       <p class="text-center"><strong>单肩包</strong></p><br>
       <a href="#demo3" data-toggle="collapse">
-        <img src="http://oon3erbcp.bkt.clouddn.com/tu-6.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="http://oon3erbcp.bkt.clouddn.com/tu-6.jpg" class="img-circle product" alt="Random Name" width="255" height="255">
       </a>
       <div id="demo3" class="collapse">
         <p>两针一线</p>
@@ -173,4 +174,50 @@
     </div>
   </div>
 </div>
+</section>
+
+<section id="jobs">
+  <div class = "container-fluid text-center">
+    <hr >
+    <h2>皮匠职位</h2>
+    <hr style= "width:200px">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="hjc-img-wrap">
+          <br><br><br>
+          <%= link_to jobs_path(:category => "学徒" ) do %>
+            <img src='<%= image_url 'xuetu.png' %>' alt="学徒">
+           <% end %>
+          <div class="caption">
+            <h3>学徒</h3>
+            <p>不要灰心，大师都是从小白开始的</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="hjc-img-wrap">
+          <br><br><br>
+          <%= link_to jobs_path(:category => "匠人" ) do %>
+            <img src='<%= image_url 'jiangren.png' %>'  alt="匠人">
+          <% end %>
+          <div class="caption">
+            <h3>匠人</h3>
+            <p>努力吧，你的上面还有大师</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="hjc-img-wrap">
+          <br><br><br>
+          <%= link_to jobs_path(:category => "大师" ) do %>
+            <img src='<%= image_url 'dashi.png' %>'   alt="大师">
+          <% end %>
+          <div class="caption">
+            <h3>大师</h3>
+            <p>大师，永远在探索</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
