@@ -30,9 +30,15 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 50px;
-
+  padding-top: 50px;
 }
 
+#search-id {
+  width: 200px;
+  padding-top: 7px;
+  background-color: #E4D2AD;
+
+}
 
 
 /****** LOGIN MODAL ******/
